@@ -1,7 +1,15 @@
 // component = html + css + js
+import './style.css'
 const MyComponent = () => {
     return (
-        <div> eric & hoidanit update </div> // viết hàm này và gọi ở hàm app, dưới dạng tag html
+        <>
+            <div> eric & hoidanit update </div>
+            <div className="child"
+                style={
+                    { borderRadius: "10px" }
+                }
+            >child</div>
+        </>
     );
 }
 

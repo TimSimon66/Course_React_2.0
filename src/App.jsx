@@ -6,7 +6,7 @@ import MyComponent from './components/learn/MyComponent'
 import { SecondComponent, ThirdComponent } from './components/learn/SecondComponent'
 
 
-
+//npm start
 
 const App = () => {
   const [count, setCount] = useState(0)
