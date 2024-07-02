@@ -20,7 +20,16 @@ const App = () => {
   }
 
   const addNewTodo = (name) => {
-    // alert(`call me ${name}`)
+    const newTodo = {
+      id: randomIntFromInterval(1, 1000000),
+      name: name
+
+    }
+    setTodoList([...todoList, newTodo]) // dùng settodolist để cập nhật giá trị cho mảng, ...todoList để copy giá trị cũ, newTodoList thêm giá trị mới vào cuối mảng
+
+  }
+  const randomIntFromInterval = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
   return (

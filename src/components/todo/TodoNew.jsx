@@ -8,14 +8,14 @@ const TodoNew = (props) => {
     const { addNewTodo } = props;
 
     const handleClick = () => {
-        console.log(">>> cheack data", valueInput)
+        addNewTodo(valueInput)
     }
 
     const handleOnChange = (name) => {
         setValueInput(name);
     }
 
-    addNewTodo("eric");
+    // addNewTodo("eric");
     return (
         <div className="todo-new">
             <input type="text"
